@@ -3,12 +3,13 @@ package web.Controller;
 public class indexController {
 
     public static void main(String[] args) {
-        AbstractDisplay d1 = new CharDisplay('H');
-        AbstractDisplay d2 = new StringDisplay("Hello, world");
-        AbstractDisplay d3 = new StringDisplay("こんにちは");
+        Factory factory = new IDCardFactory();
+        Product card1 = factory.create("橋本");
+        Product card2 = factory.create("okeya");
+        Product card3 = factory.create("yasuda");
 
-        d1.display();
-        d2.display();
-        d3.display();
+        card1.use();
+        card2.use();
+        card3.use();
     }
 }

@@ -1,10 +1,37 @@
 <!DOCTYPE HTML>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <title>Getting Started: Serving Web Content</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta charset="utf-8">
+    <title>TOP | Know Stop</title>
+    <link href="https://fonts.googleapis.com/css?family=Bitter:400,700" rel="stylesheet" />
+    <link rel="stylesheet" media="all" th:href="@{/css/style.css}"/>
+    <link rel="icon" type="image/png" sizes="96x96" href="img/common/favicon.png" />
 </head>
-<p>これがトップページ</p>
 
+<body id="index">
+<header>
+    <div class="logo">
+        <a href="index.html">
+            <img src="img/common/logo.svg" alt="Know Stop" />
+        </a>
+    </div>
+    <nav>
+        <ul class="global-nav">
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+<div id="wrap">
+    <div class="content">
+        <h1>Practice Is Life, Coding! Coding!</h1>
+        <p>このWebサイトはとりあえず自分の勉強のためにHTMLやCSS、JavaSctiptで遊ぶためのサイト<br>
+            フロント側は違う言語を実装したり、PHPかRubyとかで裏側もやっていきたい。。。</p>
+        <p class="btn"><a href="portfolio.html">My PortFolio</a></p>
+    </div>
+</div>
+<footer><small>(C)2018 Keiji</small></footer>
 </body>
+
 </html>
